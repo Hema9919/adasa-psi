@@ -1,4 +1,4 @@
-import styles from "./Badge.module.css";
+import styles from "./badge.module.css";
 export default function Badge({ text,icon }) {
   return (
     <div
