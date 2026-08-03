@@ -1,0 +1,60 @@
+.heroSection {
+  background: #0a0a0a;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+}
+
+.heroGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(38, 38, 38, .5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(38, 38, 38, .5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.heroBlobs {
+  position: absolute;
+  inset: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.blobLeft {
+  top: 0;
+  left: 20%;
+  background: rgba(249, 115, 22, .12);
+}
+
+.blobRight {
+  bottom: 0;
+  right: 20%;
+  background: rgba(234, 179, 8, .08);
+}
+
+.sectionLabel {
+  padding: 8px 18px;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50px;
+  color: #f59e0b;
+  background: rgba(255,255,255,.05);
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #f59e0b, #fb923c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

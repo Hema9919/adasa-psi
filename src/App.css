@@ -1,0 +1,11 @@
+/* تغيير لون تحديد النص */
+::selection {
+  background-color: #f97316; /* Orange */
+  color: #ffffff;
+}
+
+/* دعم Firefox */
+::-moz-selection {
+  background-color: #f97316;
+  color: #ffffff;
+}

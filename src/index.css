@@ -1,0 +1,28 @@
+@import "tailwindcss";
+.active {
+  background: #ff6b00;
+  color: white;
+}
+body {
+  padding-top: 80px;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+.bg-post {
+  background: #161616;
+}
+p.lead {
+  font-weight: 700;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+.border {
+    border-color: transparent !important;
+}
+.border {
+    border: none !important;
+}
+.border {
+    border-width: 0 !important;
+}

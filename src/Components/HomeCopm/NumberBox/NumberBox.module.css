@@ -1,0 +1,18 @@
+.glassCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.glassCard:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.gradientText {
+  background: linear-gradient(90deg, #f97316, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

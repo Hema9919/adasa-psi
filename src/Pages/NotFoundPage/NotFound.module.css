@@ -1,0 +1,174 @@
+.notFound{
+    min-height:100vh;
+    background:#0b0b0b;
+    position:relative;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle,#ff6b0018 0%,transparent 65%);
+}
+
+.grid{
+    position:absolute;
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+
+    background-size:60px 60px;
+}
+
+.errorCode{
+
+    font-size:10rem;
+    font-weight:900;
+
+    background:linear-gradient(#ff9f1c,#ff6b00);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    line-height:1;
+}
+
+.iconBox{
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,107,0,.15);
+    border:1px solid rgba(255,107,0,.3);
+
+    color:#ff6b00;
+    font-size:42px;
+
+    position:relative;
+
+    animation:float 3s infinite ease-in-out;
+}
+
+.dotOne,
+.dotTwo{
+
+    position:absolute;
+    border-radius:50%;
+}
+
+.dotOne{
+
+    width:16px;
+    height:16px;
+
+    background:#ff6b00;
+
+    right:-8px;
+    top:10px;
+
+    animation:blink 2s infinite;
+}
+
+.dotTwo{
+
+    width:12px;
+    height:12px;
+
+    background:#ffc107;
+
+    left:-8px;
+    bottom:18px;
+
+    animation:blink 2s infinite .5s;
+}
+
+.homeBtn{
+
+    background:#ff6b00 !important;
+    color:white !important;
+    border-radius:40px !important;
+    padding:14px 32px !important;
+}
+
+.homeBtn:hover{
+
+    background:#ff8124 !important;
+    color:white !important;
+}
+
+.blogBtn{
+
+    color:white !important;
+    border:1px solid rgba(255,255,255,.15) !important;
+
+    border-radius:40px !important;
+
+    padding:14px 32px !important;
+}
+
+.blogBtn:hover{
+
+    background:rgba(255,255,255,.05) !important;
+    color:white !important;
+}
+
+.footerLink{
+
+    color:#ff6b00;
+    text-decoration:none;
+}
+
+.footerLink:hover{
+
+    color:#ffa94d;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@keyframes blink{
+
+    0%,100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    50%{
+        transform:scale(1.6);
+        opacity:.3;
+    }
+}
+
+@media(max-width:768px){
+
+    .errorCode{
+
+        font-size:6rem;
+    }
+
+    .iconBox{
+
+        width:90px;
+        height:90px;
+        font-size:30px;
+    }
+
+}

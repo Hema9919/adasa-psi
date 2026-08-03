@@ -1,0 +1,53 @@
+.badge {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  color: #f97316;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dotWrapper {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.dot {
+  position: absolute;
+  inset: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f97316;
+  z-index: 2;
+}
+
+.ping {
+  position: absolute;
+  inset: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f97316;
+  opacity: .6;
+  animation: ping 1.6s infinite;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: .7;
+  }
+
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

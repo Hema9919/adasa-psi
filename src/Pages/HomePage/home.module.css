@@ -1,0 +1,26 @@
+.btnorange{
+  background-color: #f97316 !important;
+  border-radius: 25px !important;
+}
+.btnoutlineorange{
+  border: #cfcfcf solid 2px !important;
+  border-radius: 25px !important;
+  color: white !important;
+  transition: all 0.3s !important;
+}
+.btnoutlineorange:hover{
+color: #f97316  !important;
+background-color: #f974163d !important;
+border: #f97316 2px solid !important;
+}
+.heroBtnPrimary {
+  transition: all 0.3s ease;
+}
+
+.heroArrow {
+  transition: transform 0.3s ease;
+}
+
+.heroBtnPrimary:hover .heroArrow {
+  transform: translateX(-6px);
+}
